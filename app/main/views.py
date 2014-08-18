@@ -1,5 +1,5 @@
 from flask import render_template, redirect, url_for, abort, flash, request,\
-    current_app, make_response
+    current_app, make_response, jsonify
 from flask.ext.login import login_required, current_user
 from flask.ext.sqlalchemy import get_debug_queries
 from . import main
@@ -56,6 +56,24 @@ def index():
     return render_template('index.html', form=form, posts=posts,
                            show_followed=show_followed, pagination=pagination)
 
+
+@main.route('/productGrid/')
+def getProduct():
+    #entries =  [{'price': 75.95, 'sales': 352, 'productName': u'Well-Travelled Kitten'}, {'price': 10.95, 'sales': 452, 'productName': u'Great Balloons'}]
+    #entries = Post.query.all()
+    #json_entries = entries.to_json()
+
+    pagination = Post.query.all()
+    comments = pagination.items
+    return jsonify({
+        'page': 1,
+        'total': 1,
+        'records': 2,
+        'rows': [comment.to_json() for comment in comments]
+    })
+
+
+    #return jsonify(page=1, total=1, records=2, rows=json_entries)
 
 @main.route('/user/<username>')
 def user(username):

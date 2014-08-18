@@ -20,11 +20,17 @@ def get_posts():
     if pagination.has_next:
         next = url_for('api.get_posts', page=page+1, _external=True)
     return jsonify({
-        'posts': [post.to_json() for post in posts],
-        'prev': prev,
-        'next': next,
-        'count': pagination.total
+        'page': 1,
+        'total': 1,
+        'records': 2,
+        'rows':  [post.to_json() for post in posts],
     })
+    #return jsonify({
+    #    'posts': [post.to_json() for post in posts],
+    #    'prev': prev,
+    #    'next': next,
+    #    'count': pagination.total
+    #})
 
 
 @api.route('/posts/<int:id>')
