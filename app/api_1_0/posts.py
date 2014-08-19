@@ -40,7 +40,7 @@ def get_post(id):
 
 
 @api.route('/posts/', methods=['POST'])
-@permission_required(Permission.WRITE_ARTICLES)
+#permission_required(Permission.WRITE_ARTICLES)
 def new_post():
     post = Post.from_json(request.json)
     post.author = g.current_user
