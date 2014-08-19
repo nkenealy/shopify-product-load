@@ -346,7 +346,7 @@ class Post(db.Model):
         sales = json_post.get('sales')
         if body is None or body == '':
             raise ValidationError('post does not have a body')
-        return Post(body=body)
+        return Post(body=body,productName=productName,price=price,sales=sales)
 
 
 db.event.listen(Post.body, 'set', Post.on_changed_body)
