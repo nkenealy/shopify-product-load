@@ -73,12 +73,12 @@ def poststoshopify():
     shop_url = "https://3cf6a1e0b9b04c04092cb8ace60937f6:8224d17b2bce753a61537a0d2f44ec29@neil-test-shop.myshopify.com/admin"
     shopify.ShopifyResource.set_site(shop_url)
     shop = shopify.Shop.current
-    #for instance in s.query(Posts):
-    new_product = shopify.Product()
-    new_product.title = "just one for now" #instance.productName
-    new_product.product_type = "carfromellis"
-    new_product.vendor = "cadillac"
-    success = new_product.save()
+    for post in posts:
+        new_product = shopify.Product()
+        new_product.title = post.productName
+        new_product.product_type = "carfromellis"
+        new_product.vendor = "cadillac"
+        success = new_product.save()
 
 @api.route('/posts/<int:id>', methods=['PUT'])
 @permission_required(Permission.WRITE_ARTICLES)
