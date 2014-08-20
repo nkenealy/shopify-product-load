@@ -49,6 +49,34 @@ def new_post():
     return jsonify(post.to_json()), 201, \
         {'Location': url_for('api.get_post', id=post.id, _external=True)}
 
+@api.route('/poststoshopify/')
+def poststoshopify():
+    page = request.args.get('page', 1, type=int)
+    pagination = Post.query.paginate(
+        page, per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
+        error_out=False)
+    posts = pagination.items
+    prev = None
+    if pagination.has_prev:
+        prev = url_for('api.get_posts', page=page-1, _external=True)
+    next = None
+    if pagination.has_next:
+        next = url_for('api.get_posts', page=page+1, _external=True)
+    #return jsonify({
+    #    'page': 1,
+    #    'total': 1,
+    #    'records': 2,
+    #    'rows':  [post.to_json() for post in posts],
+    #})
+    shop_url = "https://3cf6a1e0b9b04c04092cb8ace60937f6:8224d17b2bce753a61537a0d2f44ec29@neil-test-shop.myshopify.com/admin"
+    shopify.ShopifyResource.set_site(shop_url)
+    shop = shopify.Shop.current
+    #for instance in s.query(Posts):
+    new_product = shopify.Product()
+    new_product.title = "just one for now" #instance.productName
+    new_product.product_type = "carfromellis"
+    new_product.vendor = "cadillac"
+    success = new_product.save()
 
 @api.route('/posts/<int:id>', methods=['PUT'])
 @permission_required(Permission.WRITE_ARTICLES)
