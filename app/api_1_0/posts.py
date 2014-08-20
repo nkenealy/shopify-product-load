@@ -4,6 +4,8 @@ from ..models import Post, Permission
 from . import api
 from .decorators import permission_required
 from .errors import forbidden
+import shopify
+
 
 
 @api.route('/posts/')
