@@ -321,6 +321,7 @@ class Post(db.Model):
             markdown(value, output_format='html'),
             tags=allowed_tags, strip=True))
 
+    # TODO: add more fields in here as needed in shopify and add same in to_json and from_json
     def to_json(self):
         json_post = {
             'url': url_for('api.get_post', id=self.id, _external=True),
