@@ -51,6 +51,7 @@ def new_post():
     return jsonify(post.to_json()), 201, \
         {'Location': url_for('api.get_post', id=post.id, _external=True)}
 
+# TODO: Add a timestamp for today when adding
 # TODO: check if pagination is needed for shopify or if I can remove pagination from here
 # TODO: ValueError: View function did not return a response - Added a return which is not being used
 @api.route('/poststoshopify/')
