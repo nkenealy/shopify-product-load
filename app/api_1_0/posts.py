@@ -75,7 +75,8 @@ def poststoshopify():
         new_product.product_type = "carfromellis"
         new_product.vendor = "cadillac"
         success = new_product.save()
-    return success
+    return jsonify(post.to_json()), 201, \
+        {'Location': url_for('api.get_post', id=post.id, _external=True)}
 
 @api.route('/posts/<int:id>', methods=['PUT'])
 @permission_required(Permission.WRITE_ARTICLES)
