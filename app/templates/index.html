@@ -22,11 +22,9 @@ jQuery(document).ready(function(){
    jQuery("#grid").jqGrid({
         datatype: 'json',
         url: '/api/v1.0/posts/',
-        colNames: ['productName','Price', 'Sales'],
+        colNames: ['productName'],
         colModel: [
             {name: 'productName', index: 'productName', width: 90},
-            {name: 'price', index: 'price', width: 55, template: numberTemplate},
-            {name: 'sales', index: 'sales', width: 42, template: numberTemplate},
         ],
         gridview: true,
         rownumbers: false,
@@ -47,7 +45,7 @@ jQuery(document).ready(function(){
 <div id="jqgrid">
     <table id="grid"></table>
     <div id="gridpager"></div>
-
+</div>
 
 
 {% endblock %}
