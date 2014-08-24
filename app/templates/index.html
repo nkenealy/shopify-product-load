@@ -20,9 +20,10 @@ jQuery(document).ready(function(){
    jQuery("#grid").jqGrid({
         datatype: 'json',
         url: '/api/v1.0/posts/',
-        colNames: ['productName'],
+        colNames: ['productName','SKU'],
         colModel: [
             {name: 'productName', index: 'productName', width: 290},
+            {name: 'SKU', index: 'SKU', width: 190},
         ],
         gridview: true,
         rownumbers: false,

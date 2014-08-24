@@ -291,6 +291,7 @@ class Post(db.Model):
     body = db.Column(db.Text)
     body_html = db.Column(db.Text)
     productName = db.Column(db.Text)
+    SKU = db.Column(db.Text)
     price = db.Column(db.Integer)
     sales = db.Column(db.Integer)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
@@ -328,6 +329,7 @@ class Post(db.Model):
             'body': self.body,
             'body_html': self.body_html,
             'productName': self.productName,
+            'SKU': self.SKU,
             'price': self.price,
             'sales': self.sales,
             'timestamp': self.timestamp,
@@ -343,11 +345,12 @@ class Post(db.Model):
     def from_json(json_post):
         body = json_post.get('body')
         productName = json_post.get('productName')
+        SKU = json_post.get('SKU')
         price = json_post.get('price')
         sales = json_post.get('sales')
         if body is None or body == '':
             raise ValidationError('post does not have a body')
-        return Post(body=body,productName=productName,price=price,sales=sales)
+        return Post(body=body,productName=productName,SKU=SKU,price=price,sales=sales)
 
 
 db.event.listen(Post.body, 'set', Post.on_changed_body)
