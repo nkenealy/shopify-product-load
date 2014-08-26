@@ -389,8 +389,9 @@ class Comment(db.Model):
             'title': self.title,
             'body_html': self.body_html,
             'timestamp': self.timestamp,
-            'author': url_for('api.get_user', id=self.author_id,
-                              _external=True),
+          # TODO: check if this is needed anywhere and refactor without it here and elsewhere
+          #  'author': url_for('api.get_user', id=self.author_id,
+          #                    _external=True),
         }
         return json_comment
 
