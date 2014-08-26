@@ -73,7 +73,6 @@ def poststoshopify():
     for post in posts:
         new_product = shopify.Product()
         new_product.title = post.productName
-        new_product.SKU = post.SKU
         new_product.product_type = "carfromellis"
         new_product.vendor = "cadillac"
         success = new_product.save()

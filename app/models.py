@@ -326,6 +326,7 @@ class Post(db.Model):
     def to_json(self):
         json_post = {
             'url': url_for('api.get_post', id=self.id, _external=True),
+            'id': self.id,
             'body': self.body,
             'body_html': self.body_html,
             'productName': self.productName,
@@ -344,6 +345,7 @@ class Post(db.Model):
 
     @staticmethod
     def from_json(json_post):
+        id = json_post.get('id')
         body = json_post.get('body')
         productName = json_post.get('productName')
         SKU = json_post.get('SKU')
