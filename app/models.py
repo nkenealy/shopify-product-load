@@ -288,6 +288,7 @@ def load_user(user_id):
 class Post(db.Model):
     __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
+    pos_product_id = db.Column(db.Text)
     body = db.Column(db.Text)
     body_html = db.Column(db.Text)
     productName = db.Column(db.Text)
@@ -326,7 +327,7 @@ class Post(db.Model):
     def to_json(self):
         json_post = {
             'url': url_for('api.get_post', id=self.id, _external=True),
-            'id': self.id,
+            'pos_product_id': self.pos_product_id,
             'body': self.body,
             'body_html': self.body_html,
             'productName': self.productName,
@@ -345,15 +346,16 @@ class Post(db.Model):
 
     @staticmethod
     def from_json(json_post):
-        id = json_post.get('id')
+        pos_product_id = json_post.get('pos_product_id')
         body = json_post.get('body')
+        pos_product_id = json_post.get('pos_product_id')
         productName = json_post.get('productName')
         SKU = json_post.get('SKU')
         price = json_post.get('price')
         sales = json_post.get('sales')
         if body is None or body == '':
             raise ValidationError('post does not have a body')
-        return Post(body=body,productName=productName,SKU=SKU,price=price,sales=sales)
+        return Post(body=body,productName=productName,pos_product_id=pos_product_id,SKU=SKU,price=price,sales=sales)
 
 
 db.event.listen(Post.body, 'set', Post.on_changed_body)
@@ -370,7 +372,7 @@ class Comment(db.Model):
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     disabled = db.Column(db.Boolean)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
+    post_id = db.Column(db.Integer, db.ForeignKey('posts.pos_product_id'))
 
     @staticmethod
     def on_changed_body(target, value, oldvalue, initiator):
