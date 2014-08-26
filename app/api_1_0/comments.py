@@ -25,6 +25,15 @@ def get_comments():
         'count': pagination.total
     })
 
+@api.route('/comments/', methods=['POST'])
+#permission_required(Permission.WRITE_ARTICLES)
+def new_comment():
+    comment = Comment.from_json(request.json)
+    db.session.add(comment)
+    db.session.commit()
+    return jsonify(comment.to_json()), 201, \
+        {'Location': url_for('api.get_comment', id=comment.id, _external=True)}
+
 
 @api.route('/comments/<int:id>')
 def get_comment(id):
