@@ -337,7 +337,8 @@ class Post(db.Model):
                               _external=True),
             'comments': url_for('api.get_post_comments', id=self.id,
                                 _external=True),
-            'comment_count': self.comments.count()
+            'comment_count': self.comments.count(),
+            'variants': [comment.to_json() for comment in self.comments]
         }
         return json_post
 
@@ -360,6 +361,9 @@ class Comment(db.Model):
     __tablename__ = 'comments'
     id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.Text)
+    barcode = db.Column(db.Text)
+    sku = db.Column(db.Text)
+    title = db.Column(db.Text)
     body_html = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     disabled = db.Column(db.Boolean)
@@ -379,6 +383,9 @@ class Comment(db.Model):
             'url': url_for('api.get_comment', id=self.id, _external=True),
             'post': url_for('api.get_post', id=self.post_id, _external=True),
             'body': self.body,
+            'barcode': self.barcode,
+            'sku': self.sku,
+            'title': self.title,
             'body_html': self.body_html,
             'timestamp': self.timestamp,
             'author': url_for('api.get_user', id=self.author_id,
@@ -389,9 +396,12 @@ class Comment(db.Model):
     @staticmethod
     def from_json(json_comment):
         body = json_comment.get('body')
+        barcode = json_comment.get('body')
+        sku = json_comment.get('body')
+        title = json_comment.get('body')
         if body is None or body == '':
             raise ValidationError('comment does not have a body')
-        return Comment(body=body)
+        return Comment(body=body,barcode=barcode,sku=sku,title=title)
 
 
 db.event.listen(Comment.body, 'set', Comment.on_changed_body)

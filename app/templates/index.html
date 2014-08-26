@@ -14,8 +14,15 @@
     {% endif %}
 </div>
 
-  <script>
-jQuery(document).ready(function(){
+
+
+  <div id="jqgrid">
+    <table id="grid"></table>
+    <div id="gridpager"></div>
+</div>
+
+<script>
+
 
    jQuery("#grid").jqGrid({
         datatype: 'json',
@@ -38,14 +45,10 @@ jQuery(document).ready(function(){
         height: '100%'
     });
     jQuery("#grid").jqGrid('navGrid','#gridPager',{edit:false,add:false,del:false});
-});
+
 
 </script>
 
-<div id="jqgrid">
-    <table id="grid"></table>
-    <div id="gridpager"></div>
-</div>
 
 
 {% endblock %}
