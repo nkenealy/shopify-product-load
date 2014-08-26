@@ -387,6 +387,7 @@ class Comment(db.Model):
             'barcode': self.barcode,
             'sku': self.sku,
             'title': self.title,
+            'post_id':self.post_id,
             'body_html': self.body_html,
             'timestamp': self.timestamp,
           # TODO: check if this is needed anywhere and refactor without it here and elsewhere
@@ -398,12 +399,13 @@ class Comment(db.Model):
     @staticmethod
     def from_json(json_comment):
         body = json_comment.get('body')
-        barcode = json_comment.get('body')
-        sku = json_comment.get('body')
-        title = json_comment.get('body')
+        barcode = json_comment.get('barcode')
+        sku = json_comment.get('sku')
+        post_id = json_comment.get('post_id')
+        title = json_comment.get('title')
         if body is None or body == '':
             raise ValidationError('comment does not have a body')
-        return Comment(body=body,barcode=barcode,sku=sku,title=title)
+        return Comment(body=body,barcode=barcode,sku=sku,title=title,post_id=post_id)
 
 
 db.event.listen(Comment.body, 'set', Comment.on_changed_body)

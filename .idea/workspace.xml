@@ -42,7 +42,7 @@
       <file leaf-file-name="comments.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/api_1_0/comments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.2" vertical-offset="45" max-vertical-offset="1200">
+            <state vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="1200">
               <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
               <folding />
             </state>
@@ -52,8 +52,8 @@
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6052999" vertical-offset="5326" max-vertical-offset="6090">
-              <caret line="393" column="11" selection-start-line="393" selection-start-column="11" selection-end-line="393" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.5843794" vertical-offset="5281" max-vertical-offset="6120">
+              <caret line="389" column="35" selection-start-line="389" selection-start-column="35" selection-end-line="389" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -909,7 +909,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/api_1_0/comments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.2" vertical-offset="45" max-vertical-offset="1200">
+        <state vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="1200">
           <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
           <folding />
         </state>
@@ -917,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6052999" vertical-offset="5326" max-vertical-offset="6090">
-          <caret line="393" column="11" selection-start-line="393" selection-start-column="11" selection-end-line="393" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.5843794" vertical-offset="5281" max-vertical-offset="6120">
+          <caret line="389" column="35" selection-start-line="389" selection-start-column="35" selection-end-line="389" selection-end-column="35" />
           <folding />
         </state>
       </provider>
