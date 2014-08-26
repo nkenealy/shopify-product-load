@@ -381,7 +381,8 @@ class Comment(db.Model):
     def to_json(self):
         json_comment = {
             'url': url_for('api.get_comment', id=self.id, _external=True),
-            'post': url_for('api.get_post', id=self.post_id, _external=True),
+         # TODO: check if this is needed anywhere and refactor without it here and elsewhere
+         #   'post': url_for('api.get_post', id=self.post_id, _external=True),
             'body': self.body,
             'barcode': self.barcode,
             'sku': self.sku,
