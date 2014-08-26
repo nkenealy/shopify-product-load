@@ -29,10 +29,10 @@ def get_comments():
 #permission_required(Permission.WRITE_ARTICLES)
 def new_comment():
     comment = Comment.from_json(request.json)
+    print comment
     db.session.add(comment)
     db.session.commit()
-    return jsonify(comment.to_json()), 201, \
-        {'Location': url_for('api.get_comment', id=comment.id, _external=True)}
+    return jsonify(comment.to_json()), 201}
 
 
 @api.route('/comments/<int:id>')
