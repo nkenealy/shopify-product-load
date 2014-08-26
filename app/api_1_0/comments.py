@@ -32,7 +32,7 @@ def new_comment():
     print comment
     db.session.add(comment)
     db.session.commit()
-    return jsonify(comment.to_json()), 201}
+    return jsonify(comment.to_json())
 
 
 @api.route('/comments/<int:id>')

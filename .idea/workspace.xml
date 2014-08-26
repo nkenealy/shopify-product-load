@@ -33,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-3.0" vertical-offset="495" max-vertical-offset="1380">
-              <caret line="51" column="73" selection-start-line="43" selection-start-column="0" selection-end-line="51" selection-end-column="73" />
+              <caret line="51" column="73" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -42,8 +42,8 @@
       <file leaf-file-name="comments.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/api_1_0/comments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.332" vertical-offset="239" max-vertical-offset="1185">
-              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.66" vertical-offset="120" max-vertical-offset="1185">
+              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -910,15 +910,15 @@
     <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.0" vertical-offset="495" max-vertical-offset="1380">
-          <caret line="51" column="73" selection-start-line="43" selection-start-column="0" selection-end-line="51" selection-end-column="73" />
+          <caret line="51" column="73" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/api_1_0/comments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.332" vertical-offset="239" max-vertical-offset="1185">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.66" vertical-offset="120" max-vertical-offset="1185">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
           <folding />
         </state>
       </provider>
