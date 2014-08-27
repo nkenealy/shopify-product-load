@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a1d4708-1391-4409-8c54-b9c0bf1728c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api_1_0/products.py" afterPath="$PROJECT_DIR$/app/api_1_0/products.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api_1_0/__init__.py" afterPath="$PROJECT_DIR$/app/api_1_0/__init__.py" />
     </list>
     <ignored path="ellis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,14 +49,70 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="products.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="products.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/api_1_0/products.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53125" vertical-offset="142" max-vertical-offset="840">
+            <state vertical-scroll-proportion="-12.92" vertical-offset="142" max-vertical-offset="840">
               <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
               <folding>
                 <element signature="e#0#66#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="errors.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api_1_0/errors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="480">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="decorators.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api_1_0/decorators.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comments.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api_1_0/comments.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="1200">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authentication.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api_1_0/authentication.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="765">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/api_1_0/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.098684214" vertical-offset="0" max-vertical-offset="608">
+              <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,6 +146,7 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/migrations/alembic.ini" />
         <option value="$PROJECT_DIR$/app/api_1_0/products.py" />
+        <option value="$PROJECT_DIR$/app/api_1_0/__init__.py" />
       </list>
     </option>
   </component>
@@ -694,24 +751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api_1_0/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="519">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.90753424" vertical-offset="0" max-vertical-offset="1305">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/api_1_0/comments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="1200">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -786,11 +829,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/api_1_0/products.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53125" vertical-offset="142" max-vertical-offset="840">
+        <state vertical-scroll-proportion="-12.92" vertical-offset="142" max-vertical-offset="840">
           <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
           <folding>
             <element signature="e#0#66#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api_1_0/errors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="633">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api_1_0/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="633">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api_1_0/comments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api_1_0/authentication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api_1_0/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.098684214" vertical-offset="0" max-vertical-offset="608">
+          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
