@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a1d4708-1391-4409-8c54-b9c0bf1728c7" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/README" afterPath="$PROJECT_DIR$/migrations_ould/README" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/alembic.ini" afterPath="$PROJECT_DIR$/migrations_ould/alembic.ini" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/env.py" afterPath="$PROJECT_DIR$/migrations_ould/env.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/script.py.mako" afterPath="$PROJECT_DIR$/migrations_ould/script.py.mako" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/190163627111_account_confirmation.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/190163627111_account_confirmation.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/192e173e89cd_.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/192e173e89cd_.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/198b0eebcf9_caching_of_avatar_hashes.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/198b0eebcf9_caching_of_avatar_hashes.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/1b966e7f4b9e_post_model.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/1b966e7f4b9e_post_model.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/2356a38169ea_followers.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/2356a38169ea_followers.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/288cd3dc5a8_rich_text_posts.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/288cd3dc5a8_rich_text_posts.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/38c4e85512a9_initial_migration.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/38c4e85512a9_initial_migration.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/456a945560f6_login_support.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/456a945560f6_login_support.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/4821e8095cb3_.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/4821e8095cb3_.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/4ffc981e8ac8_.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/4ffc981e8ac8_.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/51797465c45a_barcode_sku_and_title_added_to_comment.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/51797465c45a_barcode_sku_and_title_added_to_comment.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/51f5ccfba190_comments.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/51f5ccfba190_comments.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/56ed7d33de8d_user_roles.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/56ed7d33de8d_user_roles.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/700432756f7_added_product_table.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/700432756f7_added_product_table.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/migrations/versions/d66f086b258_user_information.py" afterPath="$PROJECT_DIR$/migrations_ould/versions/d66f086b258_user_information.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api_1_0/products.py" afterPath="$PROJECT_DIR$/app/api_1_0/products.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ellis.iws" />
@@ -48,47 +30,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="posts.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-27.0" vertical-offset="0" max-vertical-offset="1365">
+              <caret line="51" column="73" selection-start-line="43" selection-start-column="0" selection-end-line="51" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="6510" max-vertical-offset="6660">
+            <state vertical-scroll-proportion="-35.44" vertical-offset="5489" max-vertical-offset="6525">
               <caret line="434" column="68" selection-start-line="434" selection-start-column="68" selection-end-line="434" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.py">
+      <file leaf-file-name="products.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/api_1_0/products.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1725">
-              <caret line="41" column="58" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="2385" max-vertical-offset="13125">
-              <caret line="159" column="25" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
+            <state vertical-scroll-proportion="1.0361842" vertical-offset="0" max-vertical-offset="840">
+              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
               <folding>
-                <marker date="1409139574016" expanded="true" signature="49850:49938" placeholder="..." />
-                <marker date="1409139574016" expanded="true" signature="49850:49923" placeholder="..." />
-                <marker date="1409139574016" expanded="true" signature="49850:49910" placeholder="..." />
-                <marker date="1409139574016" expanded="true" signature="49850:49892" placeholder="..." />
+                <element signature="e#0#66#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="alembic.ini" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/migrations/alembic.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -116,12 +85,12 @@
         <option value="$PROJECT_DIR$/app/templates/base.html" />
         <option value="$PROJECT_DIR$/app/api_1_0/comments.py" />
         <option value="$PROJECT_DIR$/app/api_1_0/posts.py" />
-        <option value="$PROJECT_DIR$/app/api_1_0/products.py" />
         <option value="$PROJECT_DIR$/migrations/versions/3dde19f4ae34_.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
         <option value="$PROJECT_DIR$/migrations/versions/700432756f7_added_product_table.py" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/migrations/alembic.ini" />
+        <option value="$PROJECT_DIR$/app/api_1_0/products.py" />
       </list>
     </option>
   </component>
@@ -181,34 +150,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ellis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ellis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ellis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations_ould" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ellis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ellis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -521,7 +462,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33082706" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3029001" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2878625" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -584,12 +525,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2340" max-vertical-offset="14835">
           <caret line="156" column="41" selection-start-line="156" selection-start-column="41" selection-end-line="156" selection-end-column="41" />
-          <folding>
-            <marker date="1409139574016" expanded="true" signature="49850:49938" placeholder="..." />
-            <marker date="1409139574016" expanded="true" signature="49850:49923" placeholder="..." />
-            <marker date="1409139574016" expanded="true" signature="49850:49910" placeholder="..." />
-            <marker date="1409139574016" expanded="true" signature="49850:49892" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -801,53 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api_1_0/products.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.2" vertical-offset="225" max-vertical-offset="840">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-40.8" vertical-offset="0" max-vertical-offset="1365">
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="6510" max-vertical-offset="6660">
-          <caret line="434" column="68" selection-start-line="434" selection-start-column="68" selection-end-line="434" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="2385" max-vertical-offset="13125">
-          <caret line="159" column="25" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
-          <folding>
-            <marker date="1409139574016" expanded="true" signature="49850:49938" placeholder="..." />
-            <marker date="1409139574016" expanded="true" signature="49850:49923" placeholder="..." />
-            <marker date="1409139574016" expanded="true" signature="49850:49910" placeholder="..." />
-            <marker date="1409139574016" expanded="true" signature="49850:49892" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1725">
-          <caret line="41" column="58" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/migrations_ould/alembic.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7491676" vertical-offset="0" max-vertical-offset="901">
@@ -861,6 +750,48 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2415" max-vertical-offset="13425">
+          <caret line="161" column="25" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30821916" vertical-offset="345" max-vertical-offset="1725">
+          <caret line="41" column="58" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-35.44" vertical-offset="5489" max-vertical-offset="6525">
+          <caret line="434" column="68" selection-start-line="434" selection-start-column="68" selection-end-line="434" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.0" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="51" column="73" selection-start-line="43" selection-start-column="0" selection-end-line="51" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api_1_0/products.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0361842" vertical-offset="0" max-vertical-offset="840">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

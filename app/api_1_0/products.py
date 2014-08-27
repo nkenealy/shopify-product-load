@@ -7,7 +7,7 @@ from .errors import forbidden
 import shopify
 
 @api.route('/products/')
-def get_products():
+def get_product():
     page = request.args.get('page', 1, type=int)
     pagination = product.query.paginate(
         page, per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
@@ -15,10 +15,10 @@ def get_products():
     products = pagination.items
     prev = None
     if pagination.has_prev:
-        prev = url_for('api.get_products', page=page-1, _external=True)
+        prev = url_for('api.get_product', page=page-1, _external=True)
     next = None
     if pagination.has_next:
-        next = url_for('api.get_products', page=page+1, _external=True)
+        next = url_for('api.get_product', page=page+1, _external=True)
     return jsonify({
         'page': 1,
         'total': 1,
