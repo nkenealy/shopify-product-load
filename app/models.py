@@ -288,7 +288,7 @@ def load_user(user_id):
 class Post(db.Model):
     __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
-    post_id = db.Column(db.Integer,primary_key=True)
+    pos_product_id = db.Column(db.Text)
     body = db.Column(db.Text)
     body_html = db.Column(db.Text)
     productName = db.Column(db.Text)
@@ -327,7 +327,6 @@ class Post(db.Model):
     def to_json(self):
         json_post = {
             'url': url_for('api.get_post', id=self.id, _external=True),
-            'post_id': self.post_id,
             'body': self.body,
             'body_html': self.body_html,
             'productName': self.productName,
@@ -354,10 +353,37 @@ class Post(db.Model):
         sales = json_post.get('sales')
         if body is None or body == '':
             raise ValidationError('post does not have a body')
-        return Post(body=body,productName=productName,post_id=post_id,SKU=SKU,price=price,sales=sales)
+        return Post(body=body,productName=productName,SKU=SKU,price=price,sales=sales)
 
 
 db.event.listen(Post.body, 'set', Post.on_changed_body)
+
+
+class Product(db.Model):
+    __tablename__ = 'product'
+    id = db.Column(db.Integer, primary_key=True)
+    product_id = db.Column(db.Integer,primary_key=True)
+    productName = db.Column(db.Text)
+    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    comments = db.relationship('Comment', backref='product', lazy='dynamic')
+
+    # TODO: add more fields in here as needed in shopify and add same in to_json and from_json
+    def to_json(self):
+        json_product = {
+            'url': url_for('api.get_product', id=self.id, _external=True),
+            'product_id': self.product_id,
+            'productName': self.productName,
+            'timestamp': self.timestamp,
+            #'variants': [comment.to_json() for comment in self.comments]
+        }
+        return json_product
+
+    @staticmethod
+    def from_json(json_product):
+        product_id = json_product.get('product_id')
+        productName = json_product.get('productName')
+        return product(productName=productName,product_id=product_id)
+
 
 
 class Comment(db.Model):
@@ -371,7 +397,7 @@ class Comment(db.Model):
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     disabled = db.Column(db.Boolean)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    post_id = db.Column(db.Integer, db.ForeignKey('posts.post_id'))
+
 
     @staticmethod
     def on_changed_body(target, value, oldvalue, initiator):
@@ -390,7 +416,6 @@ class Comment(db.Model):
             'barcode': self.barcode,
             'sku': self.sku,
             'title': self.title,
-            'post_id':self.post_id,
             'body_html': self.body_html,
             'timestamp': self.timestamp,
           # TODO: check if this is needed anywhere and refactor without it here and elsewhere
@@ -404,11 +429,10 @@ class Comment(db.Model):
         body = json_comment.get('body')
         barcode = json_comment.get('barcode')
         sku = json_comment.get('sku')
-        post_id = json_comment.get('post_id')
         title = json_comment.get('title')
         if body is None or body == '':
             raise ValidationError('comment does not have a body')
-        return Comment(body=body,barcode=barcode,sku=sku,title=title,post_id=post_id)
+        return Comment(body=body,barcode=barcode,sku=sku,title=title)
 
 
 db.event.listen(Comment.body, 'set', Comment.on_changed_body)
