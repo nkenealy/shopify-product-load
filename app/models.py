@@ -288,7 +288,7 @@ def load_user(user_id):
 class Post(db.Model):
     __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
-    post_id = db.Column(db.Text)
+    post_id = db.Column(db.Integer,primary_key=True)
     body = db.Column(db.Text)
     body_html = db.Column(db.Text)
     productName = db.Column(db.Text)
@@ -348,7 +348,6 @@ class Post(db.Model):
     def from_json(json_post):
         post_id = json_post.get('post_id')
         body = json_post.get('body')
-        post_id = json_post.get('post_id')
         productName = json_post.get('productName')
         SKU = json_post.get('SKU')
         price = json_post.get('price')
