@@ -395,6 +395,7 @@ class Variant(db.Model):
 
 
     def to_json(self):
+    #TODO: change json_comment to json_variant
         json_comment = {
             'url': url_for('api.get_comment', id=self.id, _external=True),
          # TODO: check if this is needed anywhere and refactor without it here and elsewhere
