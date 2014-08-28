@@ -391,7 +391,7 @@ class Variant(db.Model):
     sku = db.Column(db.Text)
     title = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
-    product_id = db.Column(db.Integer, db.ForeignKey('products.id'))
+    product_id = db.Column(db.Integer, db.ForeignKey('products.product_id'))
 
 
     def to_json(self):
