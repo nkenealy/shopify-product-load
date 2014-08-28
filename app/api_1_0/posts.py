@@ -1,6 +1,6 @@
 from flask import jsonify, request, g, abort, url_for, current_app
 from .. import db
-from ..models import Post, Permission
+from ..models import Post, Permission,Product
 from . import api
 from .decorators import permission_required
 from .errors import forbidden
@@ -8,7 +8,7 @@ import shopify
 
 
 @api.route('/products/')
-def get_product():
+def get_products():
     page = request.args.get('page', 1, type=int)
     pagination = Product.query.paginate(
         page, per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
@@ -16,10 +16,10 @@ def get_product():
     products = pagination.items
     prev = None
     if pagination.has_prev:
-        prev = url_for('api.get_product', page=page-1, _external=True)
+        prev = url_for('api.get_products', page=page-1, _external=True)
     next = None
     if pagination.has_next:
-        next = url_for('api.get_product', page=page+1, _external=True)
+        next = url_for('api.get_products', page=page+1, _external=True)
     return jsonify({
         'page': 1,
         'total': 1,

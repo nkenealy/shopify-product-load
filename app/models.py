@@ -288,7 +288,6 @@ def load_user(user_id):
 class Post(db.Model):
     __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
-    pos_product_id = db.Column(db.Text)
     body = db.Column(db.Text)
     body_html = db.Column(db.Text)
     productName = db.Column(db.Text)
@@ -360,12 +359,12 @@ db.event.listen(Post.body, 'set', Post.on_changed_body)
 
 
 class Product(db.Model):
-    __tablename__ = 'product'
+    __tablename__ = 'products'
     id = db.Column(db.Integer, primary_key=True)
     product_id = db.Column(db.Integer,primary_key=True)
     productName = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
-    comments = db.relationship('Comment', backref='product', lazy='dynamic')
+    variants = db.relationship('Variant', backref='product', lazy='dynamic')
 
     # TODO: add more fields in here as needed in shopify and add same in to_json and from_json
     def to_json(self):
@@ -382,8 +381,43 @@ class Product(db.Model):
     def from_json(json_product):
         product_id = json_product.get('product_id')
         productName = json_product.get('productName')
-        return product(productName=productName,product_id=product_id)
+        return Product(productName=productName,product_id=product_id)
 
+
+class Variant(db.Model):
+    __tablename__ = 'variants'
+    id = db.Column(db.Integer, primary_key=True)
+    barcode = db.Column(db.Text)
+    sku = db.Column(db.Text)
+    title = db.Column(db.Text)
+    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    product_id = db.Column(db.Integer, db.ForeignKey('products.product_id'))
+
+
+    def to_json(self):
+        json_comment = {
+            'url': url_for('api.get_comment', id=self.id, _external=True),
+         # TODO: check if this is needed anywhere and refactor without it here and elsewhere
+         #   'post': url_for('api.get_post', id=self.post_id, _external=True),
+            'body': self.body,
+            'barcode': self.barcode,
+            'sku': self.sku,
+            'title': self.title,
+            'body_html': self.body_html,
+            'timestamp': self.timestamp,
+          # TODO: check if this is needed anywhere and refactor without it here and elsewhere
+          #  'author': url_for('api.get_user', id=self.author_id,
+          #                    _external=True),
+        }
+        return json_comment
+
+    @staticmethod
+    def from_json(json_comment):
+        barcode = json_comment.get('barcode')
+        product_id = json_comment.get('product_id')
+        sku = json_comment.get('sku')
+        title = json_comment.get('title')
+        return Comment(barcode=barcode,sku=sku,title=title)
 
 
 class Comment(db.Model):
@@ -397,6 +431,7 @@ class Comment(db.Model):
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     disabled = db.Column(db.Boolean)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
 
 
     @staticmethod
