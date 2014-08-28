@@ -360,7 +360,7 @@ db.event.listen(Post.body, 'set', Post.on_changed_body)
 
 class Product(db.Model):
     __tablename__ = 'products'
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer)
     product_id = db.Column(db.Integer,primary_key=True)
     productName = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
