@@ -411,10 +411,10 @@ class Variant(db.Model):
     @staticmethod
     def from_json(json_variant):
         barcode = json_variant.get('barcode')
-        product_id = json_variant.get('product_id')
+        pos_product_id = json_variant.get('pos_product_id')
         sku = json_variant.get('sku')
         title = json_variant.get('title')
-        return Variant(barcode=barcode,sku=sku,title=title)
+        return Variant(barcode=barcode,sku=sku,title=title,pos_product_id=pos_product_id)
 
 
 class Comment(db.Model):
