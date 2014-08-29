@@ -364,7 +364,7 @@ class Product(db.Model):
     pos_product_id = db.Column(db.Integer)
     productName = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
-    variants = db.relationship('Variant', backref='product', lazy='dynamic')
+    #variants = db.relationship('Variant', backref='product', lazy='dynamic')
 
     # TODO: add more fields in here as needed in shopify and add same in to_json and from_json
     def to_json(self):
@@ -373,7 +373,7 @@ class Product(db.Model):
             'pos_product_id': self.pos_product_id,
             'productName': self.productName,
             'timestamp': self.timestamp,
-            'variants': [variant.to_json() for variant in self.variants]
+            #'variants': [variant.to_json() for variant in self.variants]
         }
         return json_product
 
