@@ -74,6 +74,7 @@ def new_product_variant():
     #product = Product.query.get_or_404(id)
     product = Product.query.filter_by(pos_product_id=variant.pos_product_id)
     variant.product = product
+    variant.barcode = product.pos_product_id
     db.session.add(variant)
     db.session.commit()
     return jsonify(variant.to_json()), 201, \
