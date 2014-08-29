@@ -360,8 +360,8 @@ db.event.listen(Post.body, 'set', Post.on_changed_body)
 
 class Product(db.Model):
     __tablename__ = 'products'
-    id = db.Column(db.Integer)
-    product_id = db.Column(db.Integer,primary_key=True)
+    id = db.Column(db.Integer,primary_key=True)
+    product_id = db.Column(db.Integer)
     productName = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     variants = db.relationship('Variant', backref='product', lazy='dynamic')
@@ -391,7 +391,7 @@ class Variant(db.Model):
     sku = db.Column(db.Text)
     title = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
-    product_id = db.Column(db.Integer, db.ForeignKey('products.product_id'))
+    product_id = db.Column(db.Integer, db.ForeignKey('products.id'))
 
 
     def to_json(self):

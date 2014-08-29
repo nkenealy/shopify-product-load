@@ -39,6 +39,7 @@ def get_product(id):
 def new_product():
     product = Product.from_json(request.json)
     db.session.add(product)
+    print product.id
     db.session.commit()
     return jsonify(product.to_json()), 201, \
         {'Location': url_for('api.get_product', id=product.id, _external=True)}
