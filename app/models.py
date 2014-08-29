@@ -366,14 +366,14 @@ class Product(db.Model):
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     variants = db.relationship('Variant', backref='product', lazy='dynamic')
 
-    
+
     def to_json(self):
         json_product = {
             'url': url_for('api.get_product', id=self.id, _external=True),
             'pos_product_id': self.pos_product_id,
             'productName': self.productName,
             'timestamp': self.timestamp,
-            'variants': [variant.to_json() for variant in self.variants]
+            #'variants': [variant.to_json() for variant in self.variants]
         }
         return json_product
 
