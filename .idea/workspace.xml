@@ -32,8 +32,8 @@
       <file leaf-file-name="posts.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.2" vertical-offset="360" max-vertical-offset="2130">
-              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+            <state vertical-scroll-proportion="-4.7166667" vertical-offset="1562" max-vertical-offset="2130">
+              <caret line="123" column="23" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="23" />
               <folding>
                 <element signature="e#0#66#0" expanded="true" />
               </folding>
@@ -122,8 +122,8 @@
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57042253" vertical-offset="5301" max-vertical-offset="7140">
-              <caret line="375" column="13" selection-start-line="375" selection-start-column="13" selection-end-line="375" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.33274648" vertical-offset="6486" max-vertical-offset="7140">
+              <caret line="445" column="60" selection-start-line="445" selection-start-column="53" selection-end-line="445" selection-end-column="60" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -857,16 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.2" vertical-offset="360" max-vertical-offset="2130">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/api_1_0/users.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
@@ -923,10 +913,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.7166667" vertical-offset="1562" max-vertical-offset="2130">
+          <caret line="123" column="23" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57042253" vertical-offset="5301" max-vertical-offset="7140">
-          <caret line="375" column="13" selection-start-line="375" selection-start-column="13" selection-end-line="375" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.33274648" vertical-offset="6486" max-vertical-offset="7140">
+          <caret line="445" column="60" selection-start-line="445" selection-start-column="53" selection-end-line="445" selection-end-column="60" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

@@ -398,7 +398,7 @@ class Variant(db.Model):
     def to_json(self):
         json_variant = {
             'url': url_for('api.get_variant', id=self.id, _external=True),
-            'product': url_for('api.get_product', id=self.post_id, _external=True),
+            'product': url_for('api.get_product', id=self.product_id, _external=True),
             'body': self.body,
             'barcode': self.barcode,
             'sku': self.sku,
