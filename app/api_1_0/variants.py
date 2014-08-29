@@ -69,7 +69,7 @@ def get_product_variants(id):
 @api.route('/products/variants/', methods=['POST'])
 #TODO: put permission back on and make it product or variant specific
 #@permission_required(Permission.COMMENT)
-def new_product_variant(id):
+def new_product_variant():
     variant = Variant.from_json(request.json)
     #product = Product.query.get_or_404(id)
     product = Product.query.filter_by(pos_product_id=variant.pos_product_id)
