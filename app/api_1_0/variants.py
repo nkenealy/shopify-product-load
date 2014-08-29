@@ -1,6 +1,6 @@
 from flask import jsonify, request, g, url_for, current_app
 from .. import db
-from ..models import Post, Permission, Comment,Product
+from ..models import Post, Permission, Comment, Product,Variant
 from . import api
 from .decorators import permission_required
 
@@ -70,8 +70,9 @@ def get_product_variants(id):
 #TODO: put permission back on and make it product or variant specific
 #@permission_required(Permission.COMMENT)
 def new_product_variant(id):
-    product = Product.query.get_or_404(id)
     variant = Variant.from_json(request.json)
+    #product = Product.query.get_or_404(id)
+    #product = Product.query.filter_by(pos_product_id=variant.pos_product_id)
     variant.product = product
     db.session.add(variant)
     db.session.commit()

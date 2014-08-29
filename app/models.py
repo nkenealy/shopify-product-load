@@ -361,7 +361,7 @@ db.event.listen(Post.body, 'set', Post.on_changed_body)
 class Product(db.Model):
     __tablename__ = 'products'
     id = db.Column(db.Integer,primary_key=True)
-    product_id = db.Column(db.Integer)
+    pos_product_id = db.Column(db.Integer)
     productName = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     variants = db.relationship('Variant', backref='product', lazy='dynamic')
@@ -370,23 +370,24 @@ class Product(db.Model):
     def to_json(self):
         json_product = {
             'url': url_for('api.get_product', id=self.id, _external=True),
-            'product_id': self.product_id,
+            'pos_product_id': self.pos_product_id,
             'productName': self.productName,
             'timestamp': self.timestamp,
-            #'variants': [comment.to_json() for comment in self.comments]
+            'variants': [variant.to_json() for variant in self.variants]
         }
         return json_product
 
     @staticmethod
     def from_json(json_product):
-        product_id = json_product.get('product_id')
+        pos_product_id = json_product.get('pos_product_id')
         productName = json_product.get('productName')
-        return Product(productName=productName,product_id=product_id)
+        return Product(productName=productName,pos_product_id=pos_product_id)
 
 
 class Variant(db.Model):
     __tablename__ = 'variants'
     id = db.Column(db.Integer, primary_key=True)
+    pos_product_id = db.Column(db.Integer)
     barcode = db.Column(db.Text)
     sku = db.Column(db.Text)
     title = db.Column(db.Text)
@@ -400,6 +401,7 @@ class Variant(db.Model):
             'url': url_for('api.get_comment', id=self.id, _external=True),
          # TODO: check if this is needed anywhere and refactor without it here and elsewhere
          #   'post': url_for('api.get_post', id=self.post_id, _external=True),
+            'product': url_for('api.get_product', id=self.post_id, _external=True),
             'body': self.body,
             'barcode': self.barcode,
             'sku': self.sku,
@@ -447,7 +449,7 @@ class Comment(db.Model):
         json_comment = {
             'url': url_for('api.get_comment', id=self.id, _external=True),
          # TODO: check if this is needed anywhere and refactor without it here and elsewhere
-         #   'post': url_for('api.get_post', id=self.post_id, _external=True),
+            'post': url_for('api.get_post', id=self.post_id, _external=True),
             'body': self.body,
             'barcode': self.barcode,
             'sku': self.sku,
