@@ -69,9 +69,10 @@
         <entry file="file://$PROJECT_DIR$/app/api_1_0/variants.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.73748106" vertical-offset="624" max-vertical-offset="1320">
-              <caret line="74" column="75" selection-start-line="74" selection-start-column="75" selection-end-line="74" selection-end-column="75" />
+              <caret line="74" column="98" selection-start-line="74" selection-start-column="98" selection-end-line="74" selection-end-column="98" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
+                <marker date="1409338735981" expanded="true" signature="2613:2682" placeholder="select * fro..products..." />
               </folding>
             </state>
           </provider>
@@ -906,9 +907,10 @@
     <entry file="file://$PROJECT_DIR$/app/api_1_0/variants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.73748106" vertical-offset="624" max-vertical-offset="1320">
-          <caret line="74" column="75" selection-start-line="74" selection-start-column="75" selection-end-line="74" selection-end-column="75" />
+          <caret line="74" column="98" selection-start-line="74" selection-start-column="98" selection-end-line="74" selection-end-column="98" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
+            <marker date="1409338735981" expanded="true" signature="2613:2682" placeholder="select * fro..products..." />
           </folding>
         </state>
       </provider>
