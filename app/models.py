@@ -396,11 +396,8 @@ class Variant(db.Model):
 
 
     def to_json(self):
-    #TODO: change json_comment to json_variant
-        json_comment = {
-            'url': url_for('api.get_comment', id=self.id, _external=True),
-         # TODO: check if this is needed anywhere and refactor without it here and elsewhere
-         #   'post': url_for('api.get_post', id=self.post_id, _external=True),
+        json_variant = {
+            'url': url_for('api.get_variant', id=self.id, _external=True),
             'product': url_for('api.get_product', id=self.post_id, _external=True),
             'body': self.body,
             'barcode': self.barcode,
@@ -408,19 +405,16 @@ class Variant(db.Model):
             'title': self.title,
             'body_html': self.body_html,
             'timestamp': self.timestamp,
-          # TODO: check if this is needed anywhere and refactor without it here and elsewhere
-          #  'author': url_for('api.get_user', id=self.author_id,
-          #                    _external=True),
         }
-        return json_comment
+        return json_variant
 
     @staticmethod
-    def from_json(json_comment):
-        barcode = json_comment.get('barcode')
-        product_id = json_comment.get('product_id')
-        sku = json_comment.get('sku')
-        title = json_comment.get('title')
-        return Comment(barcode=barcode,sku=sku,title=title)
+    def from_json(json_variant):
+        barcode = json_variant.get('barcode')
+        product_id = json_variant.get('product_id')
+        sku = json_variant.get('sku')
+        title = json_variant.get('title')
+        return Variant(barcode=barcode,sku=sku,title=title)
 
 
 class Comment(db.Model):
