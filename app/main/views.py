@@ -6,7 +6,7 @@ from . import main
 from .forms import EditProfileForm, EditProfileAdminForm, PostForm,\
     CommentForm
 from .. import db
-from ..models import Permission, Role, User, Post, Comment,Product
+from ..models import Permission, Role, User, Post, Comment, Product,Variant
 from ..decorators import admin_required, permission_required
 
 
@@ -64,12 +64,12 @@ def getProduct():
     #json_entries = entries.to_json()
 
     pagination = Product.query.all()
-    comments = pagination.items
+    variants = pagination.items
     return jsonify({
         'page': 1,
         'total': 1,
         'records': 2,
-        'rows': [comment.to_json() for comment in comments]
+        'rows': [variant.to_json() for variant in variants]
     })
 
 
