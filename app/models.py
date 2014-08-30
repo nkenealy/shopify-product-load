@@ -364,7 +364,7 @@ class Product(db.Model):
     pos_product_id = db.Column(db.Integer)
     productName = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
-     variants = db.relationship('Variant', backref='product', lazy='dynamic')
+    variants = db.relationship('Variant', backref='product', lazy='dynamic')
 
 
     def to_json(self):
