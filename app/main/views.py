@@ -63,7 +63,10 @@ def getProduct():
     #entries = Post.query.all()
     #json_entries = entries.to_json()
 
-    pagination = Product.query.all()
+    #pagination = Product.query.all()
+    pagination = Product.query.order_by(Product.pos_product_id.desc()).paginate(
+        page, per_page=current_app.config['FLASKY_COMMENTS_PER_PAGE'],
+        error_out=False)
     variants = pagination.items
     return jsonify({
         'page': 1,
