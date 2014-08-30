@@ -373,7 +373,7 @@ class Product(db.Model):
             'pos_product_id': self.pos_product_id,
             'productName': self.productName,
             'timestamp': self.timestamp,
-            #'variants': [variant.to_json() for variant in self.variants]
+            'variants': [variant.to_json() for variant in self.variants]
         }
         return json_product
 
@@ -399,7 +399,7 @@ class Variant(db.Model):
         json_variant = {
             'url': url_for('api.get_variant', id=self.id, _external=True),
             #TODO: find  out what this is used for
-            #'product': url_for('api.get_product', id=self.product_id, _external=True),
+            'product': url_for('api.get_product', id=self.product_id, _external=True),
             'pos_product_id':self.pos_product_id,
             'barcode': self.barcode,
             'sku': self.sku,
