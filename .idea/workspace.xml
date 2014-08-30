@@ -69,11 +69,11 @@
         <entry file="file://$PROJECT_DIR$/app/api_1_0/variants.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5841584" vertical-offset="726" max-vertical-offset="1335">
-              <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+              <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
-                <marker date="1409377442104" expanded="true" signature="2670:2740" placeholder="select * fro..products..." />
-                <marker date="1409377442104" expanded="true" signature="2670:2738" placeholder="select * fro..products..." />
+                <marker date="1409377643720" expanded="true" signature="2655:2725" placeholder="select * fro..products..." />
+                <marker date="1409377643720" expanded="true" signature="2655:2723" placeholder="select * fro..products..." />
               </folding>
             </state>
           </provider>
@@ -908,11 +908,11 @@
     <entry file="file://$PROJECT_DIR$/app/api_1_0/variants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5841584" vertical-offset="726" max-vertical-offset="1335">
-          <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
+          <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1409377442104" expanded="true" signature="2670:2740" placeholder="select * fro..products..." />
-            <marker date="1409377442104" expanded="true" signature="2670:2738" placeholder="select * fro..products..." />
+            <marker date="1409377643720" expanded="true" signature="2655:2725" placeholder="select * fro..products..." />
+            <marker date="1409377643720" expanded="true" signature="2655:2723" placeholder="select * fro..products..." />
           </folding>
         </state>
       </provider>
