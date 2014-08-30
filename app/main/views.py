@@ -64,7 +64,7 @@ def getProduct():
     #json_entries = entries.to_json()
 
     pagination = Product.query.all()
-    variants = pagination.variants
+    variants = pagination.items
     return jsonify({
         'page': 1,
         'total': 1,

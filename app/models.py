@@ -367,6 +367,7 @@ class Product(db.Model):
     variants = db.relationship('Variant', backref='product', lazy='dynamic')
 
 
+
     def to_json(self):
         json_product = {
             'url': url_for('api.get_product', id=self.id, _external=True),
