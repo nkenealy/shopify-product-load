@@ -30,6 +30,7 @@ def auth_error():
 
 
 @api.before_request
+#TODO: I commented out a bunch of login requires so need to remove those comment - do global search for login_required to check
 #@auth.login_required
 def before_request():
     if not g.current_user.is_anonymous and \
