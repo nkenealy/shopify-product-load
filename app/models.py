@@ -364,7 +364,7 @@ class Product(db.Model):
     pos_product_id = db.Column(db.Integer)
     productName = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
-    variants = db.relationship('Variant', backref='product', lazy='dynamic')
+     variants = db.relationship('Variant', backref='product', lazy='dynamic')
 
 
     def to_json(self):
@@ -399,7 +399,7 @@ class Variant(db.Model):
         json_variant = {
             'url': url_for('api.get_variant', id=self.id, _external=True),
             #TODO: find  out what this is used for
-            #'product': url_for('api.get_product', id=self.product_id, _external=True),
+            'product': url_for('api.get_product', id=self.product_id, _external=True),
             'pos_product_id':self.pos_product_id,
             'barcode': self.barcode,
             'sku': self.sku,
