@@ -38,7 +38,7 @@ def login():
 
 
 @auth.route('/logout')
-@login_required
+#@login_required
 def logout():
     logout_user()
     flash('You have been logged out.')
@@ -63,7 +63,7 @@ def register():
 
 
 @auth.route('/confirm/<token>')
-@login_required
+#@login_required
 def confirm(token):
     if current_user.confirmed:
         return redirect(url_for('main.index'))
@@ -75,7 +75,7 @@ def confirm(token):
 
 
 @auth.route('/confirm')
-@login_required
+#@login_required
 def resend_confirmation():
     token = current_user.generate_confirmation_token()
     send_email(current_user.email, 'Confirm Your Account',
@@ -85,7 +85,7 @@ def resend_confirmation():
 
 
 @auth.route('/change-password', methods=['GET', 'POST'])
-@login_required
+#@login_required
 def change_password():
     form = ChangePasswordForm()
     if form.validate_on_submit():
@@ -136,7 +136,7 @@ def password_reset(token):
 
 
 @auth.route('/change-email', methods=['GET', 'POST'])
-@login_required
+#@login_required
 def change_email_request():
     form = ChangeEmailForm()
     if form.validate_on_submit():
@@ -155,7 +155,7 @@ def change_email_request():
 
 
 @auth.route('/change-email/<token>')
-@login_required
+#@login_required
 def change_email(token):
     if current_user.change_email(token):
         flash('Your email address has been updated.')
