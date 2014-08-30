@@ -68,12 +68,12 @@
       <file leaf-file-name="variants.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/api_1_0/variants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94219655" vertical-offset="726" max-vertical-offset="1335">
-              <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.5841584" vertical-offset="726" max-vertical-offset="1335">
+              <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
-                <marker date="1409376960340" expanded="true" signature="2656:2726" placeholder="select * fro..products..." />
-                <marker date="1409376960340" expanded="true" signature="2656:2724" placeholder="select * fro..products..." />
+                <marker date="1409377442104" expanded="true" signature="2670:2740" placeholder="select * fro..products..." />
+                <marker date="1409377442104" expanded="true" signature="2670:2738" placeholder="select * fro..products..." />
               </folding>
             </state>
           </provider>
@@ -525,7 +525,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25134265" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38345864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29001075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -907,12 +907,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/api_1_0/variants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94219655" vertical-offset="726" max-vertical-offset="1335">
-          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.5841584" vertical-offset="726" max-vertical-offset="1335">
+          <caret line="72" column="54" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
-            <marker date="1409376960340" expanded="true" signature="2656:2726" placeholder="select * fro..products..." />
-            <marker date="1409376960340" expanded="true" signature="2656:2724" placeholder="select * fro..products..." />
+            <marker date="1409377442104" expanded="true" signature="2670:2740" placeholder="select * fro..products..." />
+            <marker date="1409377442104" expanded="true" signature="2670:2738" placeholder="select * fro..products..." />
           </folding>
         </state>
       </provider>
