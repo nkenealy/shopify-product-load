@@ -103,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/app/api_1_0/variants.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.65346533" vertical-offset="684" max-vertical-offset="1335">
-              <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+              <caret line="72" column="66" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -906,7 +906,7 @@
     <entry file="file://$PROJECT_DIR$/app/api_1_0/variants.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.65346533" vertical-offset="684" max-vertical-offset="1335">
-          <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+          <caret line="72" column="66" selection-start-line="72" selection-start-column="66" selection-end-line="72" selection-end-column="66" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
