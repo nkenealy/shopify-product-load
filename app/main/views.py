@@ -46,7 +46,7 @@ def index():
     if current_user.is_authenticated():
         show_followed = bool(request.cookies.get('show_followed', ''))
     if show_followed:
-        query = current_user.followed_posts
+        query = current_user.followed_postsjjss
     else:
         query = Post.query
     pagination = query.order_by(Post.timestamp.desc()).paginate(
@@ -63,11 +63,8 @@ def getProduct():
     #entries = Post.query.all()
     #json_entries = entries.to_json()
 
-    #pagination = Product.query.all()
-    pagination = Product.query.order_by(Product.pos_product_id.desc()).paginate(
-        page, per_page=current_app.config['FLASKY_COMMENTS_PER_PAGE'],
-        error_out=False)
-    variants = pagination.items
+    allthestuff = Product.query.all()
+    variants = allthestuff.pos
     return jsonify({
         #'page': 1,
         #'total': 1,
