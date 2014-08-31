@@ -63,8 +63,8 @@ def getProduct():
     #entries = Post.query.all()
     #json_entries = entries.to_json()
 
-    allthestuff = Product.query.all()
-    variants = allthestuff.pos
+    allthestuff = Product.query.first()
+    variants = allthestuff.variants
     return jsonify({
         #'page': 1,
         #'total': 1,
