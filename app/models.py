@@ -362,11 +362,17 @@ class Product(db.Model):
     __tablename__ = 'products'
     id = db.Column(db.Integer,primary_key=True)
     pos_product_id = db.Column(db.Integer)
-    productName = db.Column(db.Text)
-    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    title = db.Column(db.Text)
+    product_type= db.Column(db.Text)
+    handle= db.Column(db.Text)
+    created_at = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    body_html= db.Column(db.Text)
+    template_suffix = db.Column(db.Text)
+    updated_at = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    tags = db.Column(db.Text)
+    vendor = db.Column(db.Text)
+    published_at = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     variants = db.relationship('Variant', backref='product', lazy='dynamic')
-
-
 
     def to_json(self):
         json_product = {
