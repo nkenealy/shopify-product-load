@@ -372,6 +372,7 @@ class Product(db.Model):
     tags = db.Column(db.Text)
     vendor = db.Column(db.Text)
     published_at = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     variants = db.relationship('Variant', backref='product', lazy='dynamic')
 
     def to_json(self):
