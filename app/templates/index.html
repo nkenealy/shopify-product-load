@@ -26,11 +26,12 @@
 
    jQuery("#grid").jqGrid({
         datatype: 'json',
-        url: '/api/v1.0/products/',
-        colNames: ['productName','SKU'],
+        url: '/productGrid/',
+        colNames: ['title','barcode','sku'],
         colModel: [
-            {name: 'productName', index: 'productName', width: 290},
-            {name: 'SKU', index: 'SKU', width: 190},
+            {name: 'title', index: 'title', width: 290},
+            {name: 'barcode', index: 'barcode', width: 190},
+            {name: 'sku', index: 'sku', width: 190},
         ],
         gridview: true,
         rownumbers: false,

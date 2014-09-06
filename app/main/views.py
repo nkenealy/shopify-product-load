@@ -66,9 +66,9 @@ def getProduct():
     allthestuff = Product.query.first()
     variants = allthestuff.variants
     return jsonify({
-        #'page': 1,
-        #'total': 1,
-        #'records': 2,
+        'page': 1,
+        'total': 1,
+        'records': 2,
         'rows': [variant.to_json() for variant in variants]
     })
 
