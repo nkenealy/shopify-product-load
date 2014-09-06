@@ -16,40 +16,6 @@
 
 
 
-  <div id="jqgrid">
-    <table id="grid"></table>
-    <div id="gridpager"></div>
-</div>
-
-<script>
-
-
-   jQuery("#grid").jqGrid({
-        datatype: 'json',
-        url: '/productGrid/',
-        colNames: ['title','barcode','sku'],
-        colModel: [
-            {name: 'title', index: 'title', width: 290},
-            {name: 'barcode', index: 'barcode', width: 190},
-            {name: 'sku', index: 'sku', width: 190},
-        ],
-        gridview: true,
-        rownumbers: false,
-        rowNum: 20,
-        rowList: [5, 10, 15],
-        pager: '#gridPager',
-        viewrecords: true,
-        multiSort:true,
-        sortname: 'orderdate asc, price',
-        sortorder: 'asc',
-        caption: 'Check your products before sending to Shopify',
-        height: '100%'
-    });
-    jQuery("#grid").jqGrid('navGrid','#gridPager',{edit:false,add:false,del:false});
-
-
-</script>
-
 
 
 {% endblock %}

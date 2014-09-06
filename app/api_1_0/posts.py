@@ -120,10 +120,6 @@ def postShopifyProduct():
 
     #TODO: this load fixture is for pulling in a sample json file - need to emulate this
     #data=load_fixture('product')
-    #page = request.args.get('page', 1, type=int)
-    #pagination = Product.query.paginate(
-    #    page, per_page=current_app.config['FLASKY_POSTS_PER_PAGE'],
-    #    error_out=False)
     products = Product.query.all()
 
     data = json.dumps ({

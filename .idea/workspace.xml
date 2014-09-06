@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a1d4708-1391-4409-8c54-b9c0bf1728c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/api_1_0/fixtures/product.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/api_1_0/fixtures/variants.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/addproduct.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/alembic.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/env.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/script.py.mako" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/190163627111_account_confirmation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/192e173e89cd_.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/198b0eebcf9_caching_of_avatar_hashes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/1b966e7f4b9e_post_model.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/2356a38169ea_followers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/288cd3dc5a8_rich_text_posts.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/38c4e85512a9_initial_migration.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/456a945560f6_login_support.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/4821e8095cb3_.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/4ffc981e8ac8_.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/51797465c45a_barcode_sku_and_title_added_to_comment.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/51f5ccfba190_comments.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/56ed7d33de8d_user_roles.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/700432756f7_added_product_table.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations_ould/versions/d66f086b258_user_information.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pamserver.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/base.html" afterPath="$PROJECT_DIR$/app/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/index.html" afterPath="$PROJECT_DIR$/app/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models.py" afterPath="$PROJECT_DIR$/app/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api_1_0/posts.py" afterPath="$PROJECT_DIR$/app/api_1_0/posts.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/main/views.py" afterPath="$PROJECT_DIR$/app/main/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ellis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,8 +74,18 @@
       <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1290">
-              <caret line="32" column="107" selection-start-line="32" selection-start-column="107" selection-end-line="32" selection-end-column="107" />
+            <state vertical-scroll-proportion="-12.5" vertical-offset="135" max-vertical-offset="1245">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49079755" vertical-offset="0" max-vertical-offset="489">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="posts.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09246575" vertical-offset="1719" max-vertical-offset="3480">
-              <caret line="120" column="88" selection-start-line="120" selection-start-column="88" selection-end-line="120" selection-end-column="88" />
+            <state vertical-scroll-proportion="-24.24" vertical-offset="1494" max-vertical-offset="3420">
+              <caret line="140" column="64" selection-start-line="140" selection-start-column="64" selection-end-line="140" selection-end-column="64" />
               <folding>
                 <element signature="e#0#66#0" expanded="true" />
               </folding>
@@ -180,13 +164,13 @@
         <option value="$PROJECT_DIR$/app/auth/views.py" />
         <option value="$PROJECT_DIR$/testload.py" />
         <option value="$PROJECT_DIR$/app/main/views.py" />
-        <option value="$PROJECT_DIR$/app/templates/index.html" />
         <option value="$PROJECT_DIR$/app/api_1_0/variants.json" />
         <option value="$PROJECT_DIR$/refresh.py" />
-        <option value="$PROJECT_DIR$/app/templates/base.html" />
         <option value="$PROJECT_DIR$/app/api_1_0/shoppingfeed" />
         <option value="$PROJECT_DIR$/app/models.py" />
         <option value="$PROJECT_DIR$/app/api_1_0/posts.py" />
+        <option value="$PROJECT_DIR$/app/templates/base.html" />
+        <option value="$PROJECT_DIR$/app/templates/index.html" />
       </list>
     </option>
   </component>
@@ -653,7 +637,7 @@
     <frame x="1419" y="24" width="1867" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25134265" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38990334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.49972543" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26638025" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -719,7 +703,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/app/api_1_0/posts.py</url>
-          <line>132</line>
+          <line>128</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
@@ -1008,13 +992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5313569" vertical-offset="29" max-vertical-offset="930">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python2.7/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2529412" vertical-offset="21396" max-vertical-offset="27345">
@@ -1034,14 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="4410">
           <caret line="60" column="7" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1290">
-          <caret line="32" column="107" selection-start-line="32" selection-start-column="107" selection-end-line="32" selection-end-column="107" />
           <folding />
         </state>
       </provider>
@@ -1088,11 +1057,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09246575" vertical-offset="1719" max-vertical-offset="3480">
-          <caret line="120" column="88" selection-start-line="120" selection-start-column="88" selection-end-line="120" selection-end-column="88" />
+        <state vertical-scroll-proportion="-24.24" vertical-offset="1494" max-vertical-offset="3420">
+          <caret line="140" column="64" selection-start-line="140" selection-start-column="64" selection-end-line="140" selection-end-column="64" />
           <folding>
             <element signature="e#0#66#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5" vertical-offset="135" max-vertical-offset="1245">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49079755" vertical-offset="0" max-vertical-offset="489">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
