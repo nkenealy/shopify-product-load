@@ -5,8 +5,9 @@ from . import api
 from .decorators import permission_required
 from .errors import forbidden
 import shopify
-import requests, json
-#import os
+import requests
+#import json
+import os
 
 
 @api.route('/products/')
