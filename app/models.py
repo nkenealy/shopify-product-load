@@ -396,9 +396,20 @@ class Product(db.Model):
 
     @staticmethod
     def from_json(json_product):
+        title = json_product.get('title')
         pos_product_id = json_product.get('pos_product_id')
-        productName = json_product.get('productName')
-        return Product(productName=productName,pos_product_id=pos_product_id)
+        product_type = json_product.get('product_type')
+        handle = json_product.get('handle')
+        created_at = json_product.get('created_at')
+        body_html = json_product.get('body_html')
+        template_suffix = json_product.get('template_suffix')
+        updated_at = json_product.get('updated_at')
+        tags = json_product.get('tags')
+        vendor = json_product.get('vendor')
+        published_at = json_product.get('published_at')
+        author_id = json_product.get('author_id')
+        return Product(title=title,pos_product_id=pos_product_id,product_type=product_type,handle=handle,created_at=created_at,body_html=body_html,template_suffix=template_suffix,\
+                       updated_at=updated_at,tags=tags,vendor=vendor,published_at=published_at,author_id=author_id)
 
 
 class Variant(db.Model):
