@@ -454,19 +454,40 @@ class Variant(db.Model):
             'sku': self.sku,
             'option1': self.option1,
             'fulfillment_service': self.fulfillment_service,
-            'option3': self.option3,
             'option2': self.option2
+            'option3': self.option3,
         }
         return json_variant
 
     @staticmethod
     def from_json(json_variant):
-        barcode = json_variant.get('barcode')
-        pos_product_id = json_variant.get('pos_product_id')
-        sku = json_variant.get('sku')
-        title = json_variant.get('title')
-        return Variant(barcode=barcode,sku=sku,title=title,pos_product_id=pos_product_id)
+        id= json_variant.get('id')
+        position = json_variant.get('position')
+        price = json_variant.get('price')
+        product_id = json_variant.get('product_id')
 
+        created_at= json_variant.get('created_at')
+        requires_shipping = json_variant.get('requires_shipping')
+        title = json_variant.get('title')
+        inventory_quantity = json_variant.get('inventory_quantity')
+
+        compare_at_price= json_variant.get('compare_at_price')
+        inventory_policy = json_variant.get('inventory_policy')
+        updated_at = json_variant.get('updated_at')
+        inventory_management = json_variant.get('inventory_management')
+
+        taxable= json_variant.get('taxable')
+        grams = json_variant.get('grams')
+        sku = json_variant.get('sku')
+        option1 = json_variant.get('option1')
+
+        fulfillment_service= json_variant.get('fulfillment_service')
+        option2 = json_variant.get('option2')
+        option3 = json_variant.get('option3')
+
+        return Variant(id=id,position=position,price=price,product_id=product_id,created_at=created_at,requires_shipping=requires_shipping,title=title,\
+               inventory_quantity=inventory_quantity,compare_at_price=compare_at_price,inventory_policy=inventory_policy,updated_at=updated_at,inventory_management=inventory_management,\
+               taxable=taxable,grams=grams,sku=sku,option1=option1,fulfillment_service=fulfillment_service,option2=option2,option3=option3)
 
 class Comment(db.Model):
     __tablename__ = 'comments'
