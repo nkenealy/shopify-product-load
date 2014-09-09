@@ -415,6 +415,7 @@ class Product(db.Model):
 class Variant(db.Model):
     __tablename__ = 'variants'
     id = db.Column(db.Integer, primary_key=True)
+    pos_product_id = db.Column(db.Integer)
     position = db.Column(db.Integer)
     price = db.Column(db.Text)
     product_id = db.Column(db.Integer, db.ForeignKey('products.id'))
