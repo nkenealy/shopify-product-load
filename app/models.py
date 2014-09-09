@@ -454,7 +454,7 @@ class Variant(db.Model):
             'sku': self.sku,
             'option1': self.option1,
             'fulfillment_service': self.fulfillment_service,
-            'option2': self.option2
+            'option2': self.option2,
             'option3': self.option3,
         }
         return json_variant
