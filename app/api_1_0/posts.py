@@ -124,7 +124,7 @@ def postShopifyProduct():
     products = Product.query.all()
 
     data = json.dumps ({
-        'product':  [product.to_json() for product in products]
+        'product':  product.to_json() for product in products
     })
     whatcomeback = requests.post(url,data, headers=headers)
     print whatcomeback

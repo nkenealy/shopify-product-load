@@ -377,10 +377,19 @@ class Product(db.Model):
 
     def to_json(self):
         json_product = {
-            'url': url_for('api.get_product', id=self.id, _external=True),
-            'pos_product_id': self.pos_product_id,
-            'productName': self.productName,
-            'timestamp': str(self.timestamp),
+            'id': self.id,
+            'pos_product_id' : self.pos_product_id,
+            'title' : self.title,
+            'product_type' : self.product_type,
+            'handle' : self.handle,
+            'created_at' : str(self.created_at),
+            'body_html' : self.body_html,
+            'template_suffix' : self.template_suffix,
+            'updated_at' : str(self.updated_at),
+            'tags' : self.tags,
+            'vendor' : self.vendor,
+            'published_at' : str(self.published_at),
+            'author_id' : self.author_id,
             'variants': [variant.to_json() for variant in self.variants]
         }
         return json_product
@@ -395,24 +404,47 @@ class Product(db.Model):
 class Variant(db.Model):
     __tablename__ = 'variants'
     id = db.Column(db.Integer, primary_key=True)
-    pos_product_id = db.Column(db.Integer)
-    barcode = db.Column(db.Text)
-    sku = db.Column(db.Text)
-    title = db.Column(db.Text)
-    timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    position = db.Column(db.Integer)
+    price = db.Column(db.Text)
     product_id = db.Column(db.Integer, db.ForeignKey('products.id'))
+    created_at = db.Column(db.DateTime)
+    requires_shipping = db.Column(db.Boolean)
+    title = db.Column(db.Text)
+    inventory_quantity = db.Column(db.Integer)
+    compare_at_price = db.Column(db.Text)
+    inventory_policy = db.Column(db.Text)
+    updated_at = db.Column(db.DateTime)
+    inventory_management = db.Column(db.Text)
+    taxable = db.Column(db.Boolean)
+    grams = db.Column(db.Integer)
+    sku = db.Column(db.Text)
+    option1 = db.Column(db.Text)
+    fulfillment_service = db.Column(db.Text)
+    option2 = db.Column(db.Text)
+    option3 = db.Column(db.Text)
 
 
     def to_json(self):
         json_variant = {
-            'url': url_for('api.get_variant', id=self.id, _external=True),
-            #TODO: find  out what this is used for
-            'product': url_for('api.get_product', id=self.product_id, _external=True),
-            'pos_product_id':self.pos_product_id,
-            'barcode': self.barcode,
-            'sku': self.sku,
+            'id': self.id,
+            'position': self.position,
+            'price': self.price,
+            'product_id': self.product_id,
+            'created_at': str(self.created_at),
+            'requires_shipping': self.requires_shipping,
             'title': self.title,
-            'timestamp': str(self.timestamp),
+            'inventory_quantity': self.inventory_quantity,
+            'compare_at_price': self.compare_at_price,
+            'inventory_policy': self.inventory_policy,
+            'updated_at': str(self.updated_at),
+            'inventory_management': self.inventory_management,
+            'taxable': self.taxable,
+            'grams': self.grams,
+            'sku': self.sku,
+            'option1': self.option1,
+            'fulfillment_service': self.fulfillment_service,
+            'option3': self.option3,
+            'option2': self.option2
         }
         return json_variant
 
