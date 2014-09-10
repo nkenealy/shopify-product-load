@@ -3,6 +3,7 @@ from .. import db
 from ..models import Post, Permission, Product, Variant
 from . import api
 from .decorators import permission_required
+import logging
 
 
 @api.route('/variants/')
@@ -72,6 +73,7 @@ def get_product_variants(id):
 def new_product_variant():
     variant = Variant.from_json(request.json)
     product = Product.query.filter_by(pos_product_id=variant.pos_product_id).first()
+    logging.info("heres the product",product)
     variant.product = product
     db.session.add(variant)
     db.session.commit()

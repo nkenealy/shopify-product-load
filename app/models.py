@@ -439,6 +439,7 @@ class Variant(db.Model):
     def to_json(self):
         json_variant = {
             'id': self.id,
+            'pos_product_id': self.pos_product_id,
             'position': self.position,
             'price': self.price,
             'product_id': self.product_id,
@@ -463,6 +464,7 @@ class Variant(db.Model):
     @staticmethod
     def from_json(json_variant):
         id= json_variant.get('id')
+        pos_product_id= json_variant.get('pos_product_id')
         position = json_variant.get('position')
         price = json_variant.get('price')
         product_id = json_variant.get('product_id')
@@ -486,7 +488,7 @@ class Variant(db.Model):
         option2 = json_variant.get('option2')
         option3 = json_variant.get('option3')
 
-        return Variant(id=id,position=position,price=price,product_id=product_id,created_at=created_at,requires_shipping=requires_shipping,title=title,\
+        return Variant(id=id,pos_product_id=pos_product_id,position=position,price=price,product_id=product_id,created_at=created_at,requires_shipping=requires_shipping,title=title,\
                inventory_quantity=inventory_quantity,compare_at_price=compare_at_price,inventory_policy=inventory_policy,updated_at=updated_at,inventory_management=inventory_management,\
                taxable=taxable,grams=grams,sku=sku,option1=option1,fulfillment_service=fulfillment_service,option2=option2,option3=option3)
 
