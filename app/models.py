@@ -441,7 +441,7 @@ class Variant(db.Model):
             'id': self.id,
             'pos_product_id': self.pos_product_id,
             'position': self.position,
-            'price': self.price,
+            'price': str(self.price),
             'product_id': self.product_id,
             'created_at': str(self.created_at),
             'requires_shipping': self.requires_shipping,
@@ -466,7 +466,7 @@ class Variant(db.Model):
         id= json_variant.get('id')
         pos_product_id= json_variant.get('pos_product_id')
         position = json_variant.get('position')
-        price = json_variant.get('price')
+        price = str(json_variant.get('price'))
         product_id = json_variant.get('product_id')
 
         created_at= json_variant.get('created_at')

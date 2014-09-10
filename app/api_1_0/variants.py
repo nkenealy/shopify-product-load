@@ -74,7 +74,7 @@ def new_product_variant():
     variant = Variant.from_json(request.json)
     product = Product.query.filter_by(pos_product_id=variant.pos_product_id).first()
     logging.basicConfig(filename='sep10.log',level=logging.DEBUG)
-    logging.debug('This message should go to the log file',product)
+    logging.debug('This %s message should go to the log file',product)
     variant.product = product
     db.session.add(variant)
     db.session.commit()
