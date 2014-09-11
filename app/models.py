@@ -524,7 +524,7 @@ class Image(db.Model):
         product_id = json_image.get('product_id')
         created_at= json_image.get('created_at')
         updated_at = json_image.get('updated_at')
-        return Image(id=id,position=position,product_id=product_id,created_at=created_at,updated_at=updated_at)
+        return Image(id=id,pos_product_id=pos_product_id,position=position,product_id=product_id,created_at=created_at,updated_at=updated_at)
 
 class Comment(db.Model):
     __tablename__ = 'comments'
