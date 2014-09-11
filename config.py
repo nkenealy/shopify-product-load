@@ -28,6 +28,7 @@ class Config:
 class DevelopmentConfig(Config):
     DEBUG = True
     #TODO need to put back in SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') and set DATABASE_URL FOR EVERY REBOOT
+    #SQLALCHEMY_DATABASE_URI = "postgres://otjhyopqzpctqo:2NVqAoDuneXgRI9FqymmawoP42@ec2-54-197-246-197.compute-1.amazonaws.com:5432/d9lr29nnqofv1f"
     SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://postgres:n3wmediam3d@localhost:5432/tealdb"
 
     #postgresql+psycopg2://user:password@host:port/dbname[?key=value&key=value...]

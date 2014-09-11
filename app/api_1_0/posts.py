@@ -123,11 +123,10 @@ def postShopifyProduct():
     #data=load_fixture('product')
     products = Product.query.all()
 
-    data = json.dumps ({
-        'product':  product.to_json() for product in products
-    })
-    whatcomeback = requests.post(url,data, headers=headers)
-    print whatcomeback
+    for product in products:
+        data = json.dumps ({'product':  product.to_json()})
+        whatcomeback = requests.post(url,data, headers=headers)
+        print whatcomeback
     return data
 
 
@@ -183,8 +182,7 @@ def poststoshopify():
     shop = shopify.Shop.current
     for product in products:
         new_product = shopify.Product()
-        new_product.title = product.productName
-        new_product.product_type = "carfromellis"
+        #new_product.product_type = "carfromellis"
         new_product.vendor = "cadillac"
         success = new_product.save()
 

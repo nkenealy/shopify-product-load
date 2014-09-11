@@ -1,6 +1,6 @@
 from flask import jsonify, request, g, url_for, current_app
 from .. import db
-from ..models import Post, Permission, Product, Variant
+from ..models import Post, Permission, Product, Variant, Image
 from . import api
 from .decorators import permission_required
 import logging
@@ -81,3 +81,17 @@ def new_product_variant():
     return jsonify(variant.to_json()), 201, \
         {'Location': url_for('api.get_variant', id=variant.id,
                              _external=True)}
+
+
+@api.route('/products/images/', methods=['POST'])
+#TODO: put permission back on and make it product or variant specific
+#@permission_required(Permission.COMMENT)
+def new_product_image():
+    image = Image.from_json(request.json)
+    product = Product.query.filter_by(pos_product_id=image.pos_product_id).first()
+    logging.basicConfig(filename='sep10.log',level=logging.DEBUG)
+    logging.debug('This %s message should go to the log file',product)
+    image.product = product
+    db.session.add(image)
+    db.session.commit()
+    return jsonify(image.to_json())

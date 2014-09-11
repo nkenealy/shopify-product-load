@@ -374,6 +374,7 @@ class Product(db.Model):
     published_at = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     author_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     variants = db.relationship('Variant', backref='product', lazy='dynamic')
+    images = db.relationship('Image', backref='product', lazy='dynamic')
 
     def to_json(self):
         json_product = {
@@ -491,6 +492,39 @@ class Variant(db.Model):
         return Variant(id=id,pos_product_id=pos_product_id,position=position,price=price,product_id=product_id,created_at=created_at,requires_shipping=requires_shipping,title=title,\
                inventory_quantity=inventory_quantity,compare_at_price=compare_at_price,inventory_policy=inventory_policy,updated_at=updated_at,inventory_management=inventory_management,\
                taxable=taxable,grams=grams,sku=sku,option1=option1,fulfillment_service=fulfillment_service,option2=option2,option3=option3)
+
+
+class Image(db.Model):
+    __tablename__ = 'images'
+    id = db.Column(db.Integer, primary_key=True)
+    pos_product_id = db.Column(db.Integer)
+    position = db.Column(db.Integer)
+    product_id = db.Column(db.Integer, db.ForeignKey('products.id'))
+    created_at = db.Column(db.DateTime)
+    updated_at = db.Column(db.DateTime)
+    src = db.Column(db.Text)
+
+    def to_json(self):
+        json_image = {
+            'id': self.id,
+            'position': self.position,
+            'pos_product_id': self.pos_product_id,
+            'product_id': self.product_id,
+            'created_at': str(self.created_at),
+            'updated_at': str(self.updated_at),
+            'src': str(self.src),
+        }
+        return json_image
+
+    @staticmethod
+    def from_json(json_image):
+        id = json_image.get('id')
+        pos_product_id= json_image.get('pos_product_id')
+        position = json_image.get('position')
+        product_id = json_image.get('product_id')
+        created_at= json_image.get('created_at')
+        updated_at = json_image.get('updated_at')
+        return Image(id=id,position=position,product_id=product_id,created_at=created_at,updated_at=updated_at)
 
 class Comment(db.Model):
     __tablename__ = 'comments'
