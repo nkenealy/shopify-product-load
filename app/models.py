@@ -391,7 +391,8 @@ class Product(db.Model):
             'vendor' : self.vendor,
             'published_at' : str(self.published_at),
             'author_id' : self.author_id,
-            'variants': [variant.to_json() for variant in self.variants]
+            'variants': [variant.to_json() for variant in self.variants],
+            'images': [image.to_json() for image in self.images]
         }
         return json_product
 
