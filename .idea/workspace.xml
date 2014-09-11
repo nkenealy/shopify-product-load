@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0a1d4708-1391-4409-8c54-b9c0bf1728c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models.py" afterPath="$PROJECT_DIR$/app/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api_1_0/posts.py" afterPath="$PROJECT_DIR$/app/api_1_0/posts.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testload.py" afterPath="$PROJECT_DIR$/testload.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ellis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +32,8 @@
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9246575" vertical-offset="6945" max-vertical-offset="8640">
-              <caret line="526" column="57" selection-start-line="526" selection-start-column="57" selection-end-line="526" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.7191781" vertical-offset="7125" max-vertical-offset="8655">
+              <caret line="526" column="33" selection-start-line="526" selection-start-column="33" selection-end-line="526" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -1030,8 +1027,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9246575" vertical-offset="6945" max-vertical-offset="8640">
-          <caret line="526" column="57" selection-start-line="526" selection-start-column="57" selection-end-line="526" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.7191781" vertical-offset="7125" max-vertical-offset="8655">
+          <caret line="526" column="33" selection-start-line="526" selection-start-column="33" selection-end-line="526" selection-end-column="33" />
           <folding />
         </state>
       </provider>
