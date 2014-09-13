@@ -130,6 +130,16 @@ def postShopifyProduct():
     return data
 
 
+
+@api.route('/custom_collections/', methods=['POST'])
+#permission_required(Permission.WRITE_ARTICLES)
+def new_custom_collection():
+    custom_collection = Custom_collection.from_json(request.json)
+    db.session.add(custom_collection)
+    db.session.commit()
+    return jsonify(custom_collection.to_json())
+
+
 @api.route('/posts/', methods=['POST'])
 #permission_required(Permission.WRITE_ARTICLES)
 def new_post():

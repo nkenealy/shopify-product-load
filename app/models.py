@@ -528,6 +528,28 @@ class Image(db.Model):
         src = json_image.get('src')
         return Image(id=id,pos_product_id=pos_product_id,position=position,product_id=product_id,created_at=created_at,updated_at=updated_at,src=src)
 
+class Custom_collection(db.Model):
+    __tablename__ = 'custom_collections'
+    id = db.Column(db.Integer, primary_key=True)
+    pos_dept_id = db.Column(db.Integer)
+    title = db.Column(db.Text)
+
+    def to_json(self):
+        json_custom_collection = {
+            'id': self.id,
+            'title': self.title,
+            'pos_dept_id': self.pos_dept_id,
+        }
+        return json_custom_collection
+
+    @staticmethod
+    def from_json(json_custom_collection):
+        id = json_custom_collection.get('id')
+        pos_dept_id = json_custom_collection.get('pos_dept_id')
+        title = json_custom_collection.get('title')
+        return Custom_collection(id=id,pos_dept_id=pos_dept_id,title=title)
+
+
 class Comment(db.Model):
     __tablename__ = 'comments'
     id = db.Column(db.Integer, primary_key=True)
