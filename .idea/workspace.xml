@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a1d4708-1391-4409-8c54-b9c0bf1728c7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models.py" afterPath="$PROJECT_DIR$/app/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/api_1_0/posts.py" afterPath="$PROJECT_DIR$/app/api_1_0/posts.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ellis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4878049" vertical-offset="7695" max-vertical-offset="9000">
+            <state vertical-scroll-proportion="-46.25" vertical-offset="5220" max-vertical-offset="9000">
               <caret line="542" column="0" selection-start-line="542" selection-start-column="0" selection-end-line="542" selection-end-column="0" />
               <folding />
             </state>
@@ -71,14 +69,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="posts.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2934783" vertical-offset="1921" max-vertical-offset="3555">
-              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#66#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-3.0360205" vertical-offset="1800" max-vertical-offset="3555">
+              <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,8 +138,8 @@
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/testload.py" />
         <option value="$PROJECT_DIR$/app/api_1_0/variants.py" />
-        <option value="$PROJECT_DIR$/app/api_1_0/posts.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
+        <option value="$PROJECT_DIR$/app/api_1_0/posts.py" />
       </list>
     </option>
   </component>
@@ -1022,20 +1018,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
+    <entry file="file://$PROJECT_DIR$/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2934783" vertical-offset="1921" max-vertical-offset="3555">
-          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-46.25" vertical-offset="5220" max-vertical-offset="9000">
+          <caret line="542" column="0" selection-start-line="542" selection-start-column="0" selection-end-line="542" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models.py">
+    <entry file="file://$PROJECT_DIR$/app/api_1_0/posts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4878049" vertical-offset="7695" max-vertical-offset="9000">
-          <caret line="542" column="0" selection-start-line="542" selection-start-column="0" selection-end-line="542" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.0360205" vertical-offset="1800" max-vertical-offset="3555">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
           <folding />
         </state>
       </provider>
