@@ -536,9 +536,9 @@ class Custom_collection(db.Model):
 
     def to_json(self):
         json_custom_collection = {
-            'id': self.id,
+            #'id': self.id,
             'title': self.title,
-            'pos_dept_id': self.pos_dept_id,
+            #'pos_dept_id': self.pos_dept_id,
         }
         return json_custom_collection
 
