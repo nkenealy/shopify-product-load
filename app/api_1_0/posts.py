@@ -141,7 +141,7 @@ def postShopifyCollection():
     collections = Custom_collection.query.all()
 
     for collection in collections:
-        data = json.dumps ({'collection':  collection.to_json()})
+        data = json.dumps ({'custom_collection':  collection.to_json()})
         whatcomeback = requests.post(url,data, headers=headers)
         print whatcomeback
     return data
