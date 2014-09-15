@@ -109,6 +109,7 @@ def postShopifyProduct():
     shop_url = "https://3cf6a1e0b9b04c04092cb8ace60937f6:8224d17b2bce753a61537a0d2f44ec29@neil-test-shop.myshopify.com/admin"
     shopify.ShopifyResource.set_site(shop_url)
     shop = shopify.Shop.current
+    #TODO: do I need the next 5 lins where it creates  a new product - remove and check
     new_product = shopify.Product()
     new_product.title = "neilprod"
     new_product.product_type = "carfromellis"
@@ -129,6 +130,21 @@ def postShopifyProduct():
         print whatcomeback
     return data
 
+
+@api.route('/postShopifyCollection/')
+def postShopifyCollection():
+    shop_url = "https://3cf6a1e0b9b04c04092cb8ace60937f6:8224d17b2bce753a61537a0d2f44ec29@neil-test-shop.myshopify.com/admin"
+    shopify.ShopifyResource.set_site(shop_url)
+    headers = {'content-type': 'application/json'}
+    url = shop_url+ '/custom_collections.json'
+
+    collections = Custom_collection.query.all()
+
+    for collection in collections:
+        data = json.dumps ({'collection':  collection.to_json()})
+        whatcomeback = requests.post(url,data, headers=headers)
+        print whatcomeback
+    return data
 
 
 @api.route('/custom_collections/', methods=['POST'])
