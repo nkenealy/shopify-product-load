@@ -7,7 +7,7 @@ import requests, json
 Base = automap_base()
 
 # engine, suppose it has two tables 'user' and 'address' set up
-engine = create_engine('mssql+pyodbc://devel:n3wmediam3d@NEIL-DESKTOP/FRESH?driver=SQL Server; Trusted_Connection=Yes', echo=True)
+engine = create_engine('mssql+pyodbc://devel:n************d@NEIL-DESKTOP/FRESH?driver=SQL Server; Trusted_Connection=Yes', echo=True)
 
 # reflect the tables
 Base.prepare(engine, reflect=True)
@@ -24,7 +24,7 @@ Item = Base.classes.Item
 for instance in session.query(Item).order_by(Item.ID): 
     print instance.Description
     data = json.dumps({'productName':instance.Description})
-    r = requests.post(github_url, data, headers=headers, auth=('neilkenealy@gmail.com', 'n3wmediam3d'))
+    r = requests.post(github_url, data, headers=headers, auth=('neilkenealy@gmail.com', 'n************d'))
 
 
 print r.json

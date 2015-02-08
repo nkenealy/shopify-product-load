@@ -25,7 +25,7 @@ headers = {'content-type': 'application/json'}
 data = json.dumps({'productName': "text",'author_id':1})
 #data = {"productName": "this is Neils shiny new matrix"}
 print data
-r = requests.post(github_url, data, headers=headers, auth=('neilkenealy@gmail.com', 'n3wmediam3d'))
+r = requests.post(github_url, data, headers=headers, auth=('neilkenealy@gmail.com', 'n****************d'))
 print r.json
 
 

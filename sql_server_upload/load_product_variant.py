@@ -6,7 +6,7 @@ import requests, json
 Base = automap_base()
 
 # engine, suppose it has two tables 'user' and 'address' set up
-engine = create_engine('mssql+pyodbc://devel:n3wmediam3d@NEIL-DESKTOP/FRESH?driver=SQL Server; Trusted_Connection=Yes', echo=True)
+engine = create_engine('mssql+pyodbc://devel:n**********d@NEIL-DESKTOP/FRESH?driver=SQL Server; Trusted_Connection=Yes', echo=True)
 
 # reflect the tables
 Base.prepare(engine, reflect=True)
@@ -28,7 +28,7 @@ for instance in session.query(Item).order_by(Item.ID):
                        'pos_product_id': instance.ID })
     github_url = "https://nkellis.herokuapp.com/api/v1.0/products/"
     print data
-    r = requests.post(github_url, data, headers=headers, auth=('neilkenealy@gmail.com', 'n3wmediam3d'))
+    r = requests.post(github_url, data, headers=headers, auth=('neilkenealy@gmail.com', 'n**********d'))
     print r.json
     github_url = "https://nkellis.herokuapp.com/api/v1.0/products/variants/"
     data = json.dumps({'pos_product_id':instance.ID,\
@@ -41,12 +41,12 @@ for instance in session.query(Item).order_by(Item.ID):
                        'grams':instance.Weight,\
                        'title':instance.Description})
     print data
-    r = requests.post(github_url, data, headers=headers, auth=('neilkenealy@gmail.com', 'n3wmediam3d'))
+    r = requests.post(github_url, data, headers=headers, auth=('neilkenealy@gmail.com', 'n**********d'))
     print r.json
     github_url = "https://nkellis.herokuapp.com/api/v1.0/products/images/"
     data = json.dumps({'pos_product_id':instance.ID,\
                        'src':"https://cdn.shopify.com/s/files/1/0557/9717/files/%s?67" % (instance.PictureName)})
     print data
-    r = requests.post(github_url, data, headers=headers, auth=('neilkenealy@gmail.com', 'n3wmediam3d'))
+    r = requests.post(github_url, data, headers=headers, auth=('neilkenealy@gmail.com', 'n**********d'))
     print r.json
     #Select SupplierName from supplier where Supplier.ID=instance.ID    
