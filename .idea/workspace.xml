@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a1d4708-1391-4409-8c54-b9c0bf1728c7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql_server_upload/ellis_pamreq.py" afterPath="$PROJECT_DIR$/sql_server_upload/ellis_pamreq.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql_server_upload/load_category.py" afterPath="$PROJECT_DIR$/sql_server_upload/load_category.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql_server_upload/load_department.py" afterPath="$PROJECT_DIR$/sql_server_upload/load_department.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql_server_upload/load_product_variant.py" afterPath="$PROJECT_DIR$/sql_server_upload/load_product_variant.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql_server_upload/mssql_ellis.py" afterPath="$PROJECT_DIR$/sql_server_upload/mssql_ellis.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/testload.py" afterPath="$PROJECT_DIR$/tests/testload.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ellis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,111 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.8" vertical-offset="0" max-vertical-offset="390">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ellis_pamreq.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql_server_upload/ellis_pamreq.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5542169" vertical-offset="276" max-vertical-offset="555">
-              <caret line="27" column="103" selection-start-line="27" selection-start-column="85" selection-end-line="27" selection-end-column="103" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageDownloader.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql_server_upload/ImageDownloader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1320">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="load_category.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql_server_upload/load_category.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7349398" vertical-offset="231" max-vertical-offset="510">
-              <caret line="25" column="105" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="105" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testload.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/testload.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9759036" vertical-offset="241" max-vertical-offset="690">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32649842" vertical-offset="258" max-vertical-offset="1755">
-              <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="load_department.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql_server_upload/load_department.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7349398" vertical-offset="231" max-vertical-offset="510">
-              <caret line="25" column="104" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="104" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="load_product_variant.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql_server_upload/load_product_variant.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7349398" vertical-offset="591" max-vertical-offset="870">
-              <caret line="49" column="101" selection-start-line="49" selection-start-column="89" selection-end-line="49" selection-end-column="101" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mssql_ellis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql_server_upload/mssql_ellis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7349398" vertical-offset="246" max-vertical-offset="525">
-              <caret line="26" column="103" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="103" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.8" vertical-offset="0" max-vertical-offset="735">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -162,15 +59,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/sql_server_upload/ellis_pamreq.py" />
         <option value="$PROJECT_DIR$/sql_server_upload/load_category.py" />
         <option value="$PROJECT_DIR$/sql_server_upload/load_department.py" />
         <option value="$PROJECT_DIR$/sql_server_upload/load_product_variant.py" />
         <option value="$PROJECT_DIR$/sql_server_upload/mssql_ellis.py" />
         <option value="$PROJECT_DIR$/tests/testload.py" />
+        <option value="$PROJECT_DIR$/sql_server_upload/ellis_pamreq.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -266,20 +163,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ellis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ellis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ellis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql_server_upload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1170,29 +1053,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.8" vertical-offset="0" max-vertical-offset="390">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql_server_upload/ImageDownloader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql_server_upload/ellis_pamreq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5542169" vertical-offset="276" max-vertical-offset="555">
-          <caret line="27" column="103" selection-start-line="27" selection-start-column="85" selection-end-line="27" selection-end-column="103" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1210,16 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.7349398" vertical-offset="231" max-vertical-offset="510">
           <caret line="25" column="104" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="104" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql_server_upload/load_product_variant.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7349398" vertical-offset="591" max-vertical-offset="870">
-          <caret line="49" column="101" selection-start-line="49" selection-start-column="89" selection-end-line="49" selection-end-column="101" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
@@ -1246,8 +1101,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32649842" vertical-offset="258" max-vertical-offset="1755">
+        <state vertical-scroll-proportion="-8.28" vertical-offset="258" max-vertical-offset="1755">
           <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql_server_upload/load_product_variant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.765625" vertical-offset="294" max-vertical-offset="870">
+          <caret line="49" column="101" selection-start-line="49" selection-start-column="89" selection-end-line="49" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql_server_upload/ellis_pamreq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21293375" vertical-offset="0" max-vertical-offset="634">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
