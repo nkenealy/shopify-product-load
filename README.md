@@ -21,10 +21,10 @@ https://neil-test-shop.myshopify.com/admin/products
 This is the project on github
 https://github.com/nkenealy/shopify-product-load
 
-<h1>**Python Packages used**<h1>
-* Flask-Bootstrap==3.0.3.1 *
+<h1>**Python Packages used**</h1>
+**Flask-Bootstrap==3.0.3.1**
 *Flask-HTTPAuth==2.2.0*
-*Flask-Migrate==1.1.0*
+* Flask-Migrate==1.1.0 *
 *Flask-PageDown==0.1.4*
 *Flask-SQLAlchemy==1.0*
 *Flask-Script==0.6.6*
