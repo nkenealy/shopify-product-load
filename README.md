@@ -21,26 +21,26 @@ https://neil-test-shop.myshopify.com/admin/products
 This is the project on github
 https://github.com/nkenealy/shopify-product-load
 
-Python Packages used
-Flask-Bootstrap==3.0.3.1
-Flask-HTTPAuth==2.2.0
-Flask-Migrate==1.1.0
-Flask-PageDown==0.1.4
-Flask-SQLAlchemy==1.0
-Flask-Script==0.6.6
-Jinja2==2.7.1
-Mako==0.9.1
-Markdown==2.3.1
-MarkupSafe==0.18
-SQLAlchemy==0.8.4
-WTForms==1.0.5
-alembic==0.6.2
-bleach==1.4.0
-blinker==1.3
-html5lib==1.0b3
-six==1.4.1
-ShopifyAPI==1.0.1
-requests==2.1.0
+**Python Packages used**
+*Flask-Bootstrap==3.0.3.1*
+*Flask-HTTPAuth==2.2.0*
+*Flask-Migrate==1.1.0*
+*Flask-PageDown==0.1.4*
+*Flask-SQLAlchemy==1.0*
+*Flask-Script==0.6.6*
+*Jinja2==2.7.1*
+*Mako==0.9.1*
+*Markdown==2.3.1*
+*MarkupSafe==0.18*
+*SQLAlchemy==0.8.4*
+*WTForms==1.0.5*
+*alembic==0.6.2*
+*bleach==1.4.0*
+*blinker==1.3*
+*html5lib==1.0b3*
+*six==1.4.1*
+*ShopifyAPI==1.0.1*
+*requests==2.1.0*
 
 
 
