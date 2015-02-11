@@ -30,17 +30,17 @@ https://github.com/nkenealy/shopify-product-load
 * Flask-Script==0.6.6
 * Jinja2==2.7.1
 * Mako==0.9.1
-*Markdown==2.3.1*
-*MarkupSafe==0.18*
-*SQLAlchemy==0.8.4*
-*WTForms==1.0.5*
-*alembic==0.6.2*
-*bleach==1.4.0*
-*blinker==1.3*
-*html5lib==1.0b3*
-*six==1.4.1*
-*ShopifyAPI==1.0.1*
-*requests==2.1.0*
+* Markdown==2.3.1
+* MarkupSafe==0.18
+* SQLAlchemy==0.8.4
+* WTForms==1.0.5
+* alembic==0.6.2
+* bleach==1.4.0
+* blinker==1.3
+* html5lib==1.0b3
+* six==1.4.1
+* ShopifyAPI==1.0.1
+* requests==2.1.0
 
 
 
