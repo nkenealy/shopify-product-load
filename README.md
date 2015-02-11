@@ -22,14 +22,14 @@ This is the project on github
 https://github.com/nkenealy/shopify-product-load
 
 <h1>**Python Packages used**</h1>
-**Flask-Bootstrap==3.0.3.1**
-*Flask-HTTPAuth==2.2.0*
-* Flask-Migrate==1.1.0 *
-*Flask-PageDown==0.1.4*
-*Flask-SQLAlchemy==1.0*
-*Flask-Script==0.6.6*
-*Jinja2==2.7.1*
-*Mako==0.9.1*
+* Flask-Bootstrap==3.0.3.1
+* Flask-HTTPAuth==2.2.0
+* Flask-Migrate==1.1.0 
+* Flask-PageDown==0.1.4
+* Flask-SQLAlchemy==1.0
+* Flask-Script==0.6.6
+* Jinja2==2.7.1
+* Mako==0.9.1
 *Markdown==2.3.1*
 *MarkupSafe==0.18*
 *SQLAlchemy==0.8.4*
